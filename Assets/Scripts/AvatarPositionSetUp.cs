@@ -45,13 +45,13 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        activeButton.onClick.AddListener(this.activateAvatar);
+        activeButton.onClick.AddListener(() => this.activateAvatar());
 
         // dragging avatars;
 
         // if save button is clicked:
         // store position in position vector
 
-        saveButton.onClick.AddListener(this.setPosition);
+        saveButton.onClick.AddListener(() => this.setPosition());
     }
 }
